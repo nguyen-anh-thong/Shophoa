@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Shophoa.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Shop Hoa Tươi</a>
+   <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="XemHoa.aspx">Xem Hoa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="TraCuu.aspx">Tra Cứu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ThemHoa.aspx">Thêm Hoa</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="bg-info text-center pt-3 pb-3">
+            Make By: Nguyễn Bùi Quôc Tân
+    </form>
+</body>
+</html>
